@@ -12,14 +12,18 @@ body {
 /* Global Rules */
 
 /* Start Navbar */
-.container {
-    background-color: var(--main-color)
-}
-.navbar-nav {
-    .search-icon {
-        border-color: var(--sky-color) !important;
-        svg {
-            color: var(--sky-color);
+.navbar {
+    background-color: var(--main-color);
+    .navbar-nav {
+        .search-icon {
+            border-color: var(--sky-color) !important;
+            svg {
+                color: var(--sky-color);
+            }
+        }
+        .nav-link.active,
+        .nav-link:hover {
+            color: #1FB1CC !important;
         }
     }
     .btn {
@@ -29,9 +33,35 @@ body {
             color: var(--yellow-color);
         }
     }
-    .nav-link.active,
-    .nav-link:hover {
-        color: #1FB1CC !important;
+    .navbar-toggler[aria-expanded="true"] {
+        border-color: var(--sky-color) !important;
+    }
+    .navbar-toggler:focus {
+        box-shadow: none;
     }
 }
 /* End Navbar */
+
+/* Start Landing */
+.landing {
+    background-color: var(--main-color);
+    min-height: calc(100vh - 70px);
+    .btn {
+        background-color: var(--red-color);
+        color: var(--yellow-color);
+    }
+}
+/* End Landing */
+
+/* Start Features */
+.title::before {
+    position: absolute;
+    content: "";
+    bottom: -15px;
+    left: 50%;
+    height: 2px;
+    width: 7em;
+    background-color: var(--sky-color);
+    transform: translate(-50%, -50%);
+}
+/* End Features */
