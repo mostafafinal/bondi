@@ -4,6 +4,7 @@
     --red-color: #FF3150;
     --sky-color: #33d1cc;
     --yellow-color: #FFC429;
+    --section-color: #eff7fa;
 }
 body {
     min-height: 10000px;
@@ -63,5 +64,21 @@ body {
     width: 7em;
     background-color: var(--sky-color);
     transform: translate(-50%, -50%);
+}
+.feat {
+    h4 {
+        color: var(--yellow-color);
+    }
+    .feat-icon {
+        height: 200px;
+        .num {
+            font-size: 12rem;
+            color: var(--section-color);
+        }
+        .icon {
+            font-size: 4rem;
+            color: var(--sky-color);
+        }
+    }
 }
 /* End Features */
