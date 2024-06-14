@@ -82,3 +82,36 @@ body {
     }
 }
 /* End Features */
+
+/* Start Gallery */
+.gallery {
+    background-color: var(--section-color);
+    .navbtns li.active {
+        background-color: var(--red-color);
+        color: var(--yellow-color);
+    }
+    .pic-box::before {
+        position: absolute;
+        content: attr(data-work);
+        width: calc(100% - 32px);
+        height: calc(100% - 8px);
+        background-color: #33d1ccb8;
+        left: -100%;
+        top: 4px;
+        transition: .3s;
+        color: white;
+        font-size: 25px;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .pic-box:hover::before {
+        left: 16px;
+    }
+    .more-btn {
+        background-color: var(--red-color);
+        color: var(--yellow-color);
+    }
+}
+/* End Gallery */
