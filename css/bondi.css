@@ -20,9 +20,10 @@ body {
                 color: var(--sky-color);
             }
         }
-        .nav-link.active,
-        .nav-link:hover {
+        li.active,
+        li:hover {
             color: #1FB1CC !important;
+            cursor: pointer;
         }
     }
     .navbar-toggler[aria-expanded="true"] {

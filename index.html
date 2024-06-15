@@ -34,22 +34,19 @@
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="main">
           <ul class="navbar-nav mb-2 mb-lg-0 text-light position-relative">
-            <li class="nav-item fw-bold me-3">
-              <a class="nav-link text-light active" aria-current="page" href="#"
-                >Home</a
-              >
+            <li class="nav-item fw-bold me-3 active" data-section=".landing">
+              Home
             </li>
-            <li class="nav-item fw-bold me-3">
-              <a class="nav-link text-light" href="#">Services</a>
+            <li class="nav-item fw-bold me-3" data-section=".features">
+              Services
             </li>
-            <li class="nav-item fw-bold me-3">
-              <a class="nav-link text-light" href="#">Portfolio</a>
+            <li class="nav-item fw-bold me-3" data-section=".gallery">
+              Portfolio
             </li>
-            <li class="nav-item fw-bold me-3">
-              <a class="nav-link text-light" href="#">About</a>
-            </li>
-            <li class="nav-item fw-bold me-3">
-              <a class="nav-link text-light" href="#">Contact</a>
+            <li class="nav-item fw-bold me-3" data-section=".about">About</li>
+
+            <li class="nav-item fw-bold me-3" data-section=".subscribe">
+              Contact
             </li>
             <div
               class="fw-bold border-start search-icon m-auto ps-3 pe-3 d-none d-lg-block"
@@ -150,13 +147,24 @@
           <p class="text-secondary text-uppercase">Prepare To be Amazed</p>
         </div>
         <ul class="navbtns list-unstyled d-flex justify-content-center mt-5">
-          <li class="btn me-2 rounded-pill fw-bold pe-3 ps-3 active">All</li>
-          <li class="btn me-2 rounded-pill fw-bold">Design</li>
-          <li class="btn me-2 rounded-pill fw-bold">Code</li>
-          <li class="btn me-2 rounded-pill fw-bold">Photo</li>
-          <li class="btn rounded-pill fw-bold">App</li>
+          <li
+            class="btn me-2 rounded-pill fw-bold pe-3 ps-3 active"
+            data-section="all"
+          >
+            All
+          </li>
+          <li class="btn me-2 rounded-pill fw-bold" data-section="design">
+            Design
+          </li>
+          <li class="btn me-2 rounded-pill fw-bold" data-section="code">
+            Code
+          </li>
+          <li class="btn me-2 rounded-pill fw-bold" data-section="photo">
+            Photo
+          </li>
+          <li class="btn rounded-pill fw-bold" data-section="app">App</li>
         </ul>
-        <div class="row photos">
+        <div class="row photos all">
           <div
             class="pic-box col-sm-6 col-md-4 col-lg-3 mb-4 position-relative overflow-hidden"
             data-work="Appliction"
@@ -227,6 +235,84 @@
               alt=""
             />
           </div>
+          <div
+            class="pic-box col-sm-6 col-md-4 col-lg-3 mb-4 position-relative overflow-hidden"
+            data-work="Appliction"
+          >
+            <img
+              class="img-fluid p-1 bg-white"
+              src="/imgs/work-08.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="row photos justify-content-center design d-none">
+          <div
+            class="pic-box col-sm-6 col-md-4 col-lg-3 mb-4 position-relative overflow-hidden"
+            data-work="Appliction"
+          >
+            <img
+              class="img-fluid p-1 bg-white"
+              src="/imgs/work-04.jpg"
+              alt=""
+            />
+          </div>
+          <div
+            class="pic-box col-sm-6 col-md-4 col-lg-3 mb-4 position-relative overflow-hidden"
+            data-work="Appliction"
+          >
+            <img
+              class="img-fluid p-1 bg-white"
+              src="/imgs/work-05.jpg"
+              alt=""
+            />
+          </div>
+          <div
+            class="pic-box col-sm-6 col-md-4 col-lg-3 mb-4 position-relative overflow-hidden"
+            data-work="Appliction"
+          >
+            <img
+              class="img-fluid p-1 bg-white"
+              src="/imgs/work-06.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="row photos justify-content-center code d-none">
+          <div
+            class="pic-box col-sm-6 col-md-4 col-lg-3 mb-4 position-relative overflow-hidden"
+            data-work="Appliction"
+          >
+            <img
+              class="img-fluid p-1 bg-white"
+              src="/imgs/work-04.jpg"
+              alt=""
+            />
+          </div>
+          <div
+            class="pic-box col-sm-6 col-md-4 col-lg-3 mb-4 position-relative overflow-hidden"
+            data-work="Appliction"
+          >
+            <img
+              class="img-fluid p-1 bg-white"
+              src="/imgs/work-08.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="row photos justify-content-center photo d-none">
+          <div
+            class="pic-box col-sm-6 col-md-4 col-lg-3 mb-4 position-relative overflow-hidden"
+            data-work="Appliction"
+          >
+            <img
+              class="img-fluid p-1 bg-white"
+              src="/imgs/work-04.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="row photos justify-content-center app d-none">
           <div
             class="pic-box col-sm-6 col-md-4 col-lg-3 mb-4 position-relative overflow-hidden"
             data-work="Appliction"
@@ -557,5 +643,6 @@
     <!-- End Footer -->
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/all.min.js"></script>
+    <script src="/js/bondi.js"></script>
   </body>
 </html>
