@@ -13,7 +13,6 @@ body {
 
 /* Start Navbar */
 .navbar {
-    background-color: var(--main-color);
     .navbar-nav {
         .search-icon {
             border-color: var(--sky-color) !important;
@@ -24,13 +23,6 @@ body {
         .nav-link.active,
         .nav-link:hover {
             color: #1FB1CC !important;
-        }
-    }
-    .btn {
-        background-color: var(--red-color);
-        color: var(--yellow-color);
-        &:hover {
-            color: var(--yellow-color);
         }
     }
     .navbar-toggler[aria-expanded="true"] {
@@ -44,12 +36,7 @@ body {
 
 /* Start Landing */
 .landing {
-    background-color: var(--main-color);
     min-height: calc(100vh - 70px);
-    .btn {
-        background-color: var(--red-color);
-        color: var(--yellow-color);
-    }
 }
 /* End Landing */
 
@@ -108,10 +95,6 @@ body {
     .pic-box:hover::before {
         left: 16px;
     }
-    .more-btn {
-        background-color: var(--red-color);
-        color: var(--yellow-color);
-    }
 }
 /* End Gallery */
 
@@ -142,12 +125,6 @@ body {
 }
 /* End Team */
 
-/* Start Project */
-.project {
-    background-color: var(--main-color);
-}
-/* End Project */
-
 /* Start Subscribe */
 .subscribe {
     background-color: var(--yellow-color);
@@ -165,10 +142,11 @@ body {
     }
 }
 /* End Subscribe */
-
+.bg-section {
+    background-color: var(--main-color);
+}
 /* Start Footer */
 footer {
-    background-color: var(--main-color);
     .copyright {
         & > span {
             color: var(--sky-color);

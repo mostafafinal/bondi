@@ -16,21 +16,15 @@
   </head>
   <body>
     <!-- Start Navbar -->
-    <nav class="navbar navbar-expand-lg sticky-top">
+    <nav class="navbar bg-section navbar-expand-lg sticky-top">
       <div class="container">
         <img class="navbar-brand" src="imgs/logo.png" alt="" />
         <button
-          class="navbar-toggler border-light fs-6 rounded-1 outline-none"
+          class="navbar-toggler collapsed border-light fs-6 rounded-1 outline-none"
           type="button"
-          data-bs-tbtn-primary
-          btn
-          text-center
-          le="collapse"
-          data-bs-tbtn-primary
-          btn
-          text-center
-          et="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
+          data-bs-toggle="collapse"
+          data-bs-target="#main"
+          aria-controls="main"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
@@ -38,10 +32,7 @@
             class="fa-solid fa-bars navbar-toggler-icon text-light fw-bold"
           ></i>
         </button>
-        <div
-          class="collapse navbar-collapse justify-content-end"
-          id="navbarSupportedContent"
-        >
+        <div class="collapse navbar-collapse justify-content-end" id="main">
           <ul class="navbar-nav mb-2 mb-lg-0 text-light position-relative">
             <li class="nav-item fw-bold me-3">
               <a class="nav-link text-light active" aria-current="page" href="#"
@@ -66,21 +57,29 @@
               <i class="fa-solid fa-magnifying-glass"></i>
             </div>
           </ul>
-          <button class="btn rounded-pill pe-3 ps-3 fw-bold p-2">Login</button>
+          <div
+            class="cta-btn btn text-center rounded-pill mb-5 pt-2 pb-2 ps-3 pe-3 fw-bold mt-auto mb-auto"
+          >
+            Login
+          </div>
         </div>
       </div>
     </nav>
     <!-- End Navbar -->
     <!-- Start Landing -->
-    <div class="landing d-flex justify-content-center align-items-center">
+    <div
+      class="landing bg-section d-flex justify-content-center align-items-center"
+    >
       <div class="content text-center">
         <h1 class="text-light">Taste the Creativity</h1>
         <p class="text-white-50 mb-5 fw-bold">
           We make awesome graphic and web design
         </p>
-        <button class="btn main-btn rounded-pill p-2 pe-3 ps-3 fw-bold">
+        <div
+          class="cta-btn btn text-center rounded-pill mb-5 pt-2 pb-2 fw-bold"
+        >
           Get Started
-        </button>
+        </div>
       </div>
     </div>
     <!-- End Landing -->
@@ -240,9 +239,9 @@
           </div>
         </div>
         <div
-          class="more-btn btn rounded-pill text-uppercase mt-4 mb-5 p-2 ps-3 pe-3"
+          class="cta-btn btn text-center text-uppercase rounded-pill mt-5 pt-2 pb-2 fw-bold"
         >
-          I want More
+          I Want More
         </div>
       </div>
     </div>
@@ -375,7 +374,7 @@
     </div>
     <!-- End Tech -->
     <!-- Start Project -->
-    <div class="project text-center pt-5 pb-5">
+    <div class="project bg-section text-center pt-5 pb-5">
       <div class="container mb-4">
         <h2 class="text-light">Start Your Project Now</h2>
         <p class="text-white-50 mb-5">
@@ -462,7 +461,7 @@
     </div>
     <!-- End Subscribe -->
     <!-- Start Footer -->
-    <footer class="pt-5 pb-5">
+    <footer class="bg-section pt-5 pb-5">
       <div class="container">
         <div class="row">
           <div
