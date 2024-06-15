@@ -147,3 +147,21 @@ body {
     background-color: var(--main-color);
 }
 /* End Project */
+
+/* Start Subscribe */
+.subscribe {
+    background-color: var(--yellow-color);
+    input[type="email"] {
+        &::placeholder {
+            color: white;
+        }
+        &:focus {
+            outline: none;
+        }
+    }
+    input[type="submit"] {
+        background-color: var(--main-color);
+        color: var(--yellow-color);
+    }
+}
+/* End Subscribe */
