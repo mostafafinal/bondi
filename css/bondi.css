@@ -164,3 +164,33 @@ footer {
     }
 }
 /* End Footer */
+
+/* Scroll To Top Button */
+.to-top {
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: var(--yellow-color);
+    position: fixed;
+    right: 50px;
+    bottom: 90px;
+    border-radius: 50%;
+    z-index: 1;
+    &::before {
+        position: relative;
+        content: "\f062";
+        font-family: 'FontAwesome';
+        font-size: 25px;
+        color: var(--main-color);
+    }
+}
+@media (max-width: 767px) {
+    .to-top {
+        right: 30px;
+        bottom: 50px;
+    }
+}
