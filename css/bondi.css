@@ -127,3 +127,17 @@ body {
     }
 }
 /* End About */
+
+/* Start Team */
+.team {
+    background-color: var(--section-color);
+    h2 {
+        color: var(--yellow-color);
+    }
+    .mem {
+        h4 {
+            background-color: var(--sky-color);
+        }
+    }
+}
+/* End Team */
