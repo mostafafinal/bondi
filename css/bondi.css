@@ -7,7 +7,6 @@
     --section-color: #eff7fa;
 }
 body {
-    min-height: 10000px;
     font-family: "Roboto", sans-serif;
 }
 /* Global Rules */
@@ -123,7 +122,8 @@ body {
     }
 }
 /* End About */
-.cta-btn {
+.cta-btn,
+.cta-btn:hover {
     background-color: var(--red-color);
     color: var(--yellow-color);
 }
@@ -165,3 +165,23 @@ body {
     }
 }
 /* End Subscribe */
+
+/* Start Footer */
+footer {
+    background-color: var(--main-color);
+    .copyright {
+        & > span {
+            color: var(--sky-color);
+        }
+        div > span {
+            color: var(--yellow-color);
+        }
+    }
+    .social-icons {
+        svg {
+            width: 20px;
+            height: 20px;
+        }
+    }
+}
+/* End Footer */
