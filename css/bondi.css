@@ -115,3 +115,15 @@ body {
     }
 }
 /* End Gallery */
+
+/* Start About */
+.about {
+    .description {
+        max-width: 500px;
+    }
+    .btn {
+        background-color: var(--red-color);
+        color: var(--yellow-color);
+    }
+}
+/* End About */
