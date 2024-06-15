@@ -121,12 +121,12 @@ body {
     .description {
         max-width: 500px;
     }
-    .btn {
-        background-color: var(--red-color);
-        color: var(--yellow-color);
-    }
 }
 /* End About */
+.cta-btn {
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+}
 
 /* Start Team */
 .team {
@@ -141,3 +141,9 @@ body {
     }
 }
 /* End Team */
+
+/* Start Project */
+.project {
+    background-color: var(--main-color);
+}
+/* End Project */
