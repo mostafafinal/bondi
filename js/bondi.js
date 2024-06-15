@@ -6,6 +6,7 @@ navbarItems.forEach((item) => {
     document.querySelector(event.target.dataset.section).scrollIntoView({
       behavior: "smooth",
     });
+    document.querySelector(".navbar-collapse").classList.remove("show");
   });
 });
 
